@@ -139,15 +139,38 @@ ul li a:hover{
     text-shadow: 2px 2px 30px black;
 }
 
-#first {
-    background-image: url(P1.png);
-    height: 150vh;
+#first1 {
+    background-image: url(./起飛.JPG);
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#first2 {
+    background-image: url(./飛翔.JPG);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#first3 {
+    background-image: url(./太平洋.JPG);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#first4 {
+    background-image: url(./蘭嶼.JPG);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .paragraph {
     margin-top: 100px;
     font-size: 22px;
@@ -166,8 +189,9 @@ ul li a:hover{
     background-size: cover;
 }
 
+
 #third {
-    background-image: url(P3.png);
+    background-image: url(./正面2.jpeg);
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -278,14 +302,7 @@ ul li a:hover{
     background-size: cover;
 }
 
-#eleventh {
-    background-image: url(P8.png);
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 #twelve {
     background-color: white;

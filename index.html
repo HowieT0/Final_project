@@ -46,24 +46,26 @@
             <li><a href="#">結語</a></li>
         </ul>
     </div>
-
-    <div id="first" class="container-fluid">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <p span class="paragraph">
-                    蘭嶼，在旅人眼中，是一個遺世獨立的美麗小島，擁有獨特的生態和達悟族文化。
-                </p>
-            </div>
-            <div class="col-3"></div>
-        </div>
+    
+<!--  -->
+    <div id="first1" class="container-fluid">
+        
+    </div>
+    <div id="first2" class="container-fluid">
+        
+    </div>
+    <div id="first3" class="container-fluid">
+        
+    </div>
+    <div id="first4" class="container-fluid">
+        
     </div>
 
-    <div id="v2frame" style="height: 150vh;">
+    <!-- <div id="v2frame" style="height: 150vh;">
         <div class="video-container " style="position: fixed; overflow:hidden; z-index:-2">
             <video autoplay muted loop id="video2" src="lanyu.mp4"></video>
         </div>
-    </div>
+    </div> -->
 
     <div id="second" class="container-fluid">
         <div class="row">
@@ -74,6 +76,35 @@
                 </p>
             </div>
             <div class="col-3"></div>
+        </div>
+    </div>
+
+    <div id="third1" style=" height: 600vh;background-color: #000;filter: grayscale(20%);">
+        <div id="vanwa3" class="sticky-top" style="height: 100vh;z-index: 15;">
+            <img src="./背1.png"
+                class="opa4 img-fluid earth-img" data-seq=1 style="background-position:0% 50%;z-index:15;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
+            <img src="./背3.png"
+                class="opa4 img-fluid earth-img" data-seq=2 style="background-position:0% 50%;z-index:14;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
+            <img src="./背3.png"
+                class="opa4 img-fluid earth-img" data-seq=3 style="z-index:13;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
+            <img src="./正面.png"
+                class="opa4 img-fluid earth-img" data-seq=4 style="z-index:13;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
         </div>
     </div>
 
@@ -90,7 +121,7 @@
         </div>
     </div>
 
-   
+   <!--  -->
 
     <div id="forth" class="container-fluid">
         <div class="row">
@@ -321,23 +352,7 @@
             </div>
         </div>
     </div>
-    <div id="eleventh" class="container-fluid">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <p span class="paragraph">
-                    對於未來的規劃、是否回鄉定居，Jiayod充滿了矛盾。<br><br>
-                    一方面，他心繫家鄉發生的大小事，包括重大祭典、土地問題、部落建設；
-                    他也感受到文化快速流失，耆老相繼過世，今年家族要協力製作大拼板舟，卻因為沒有耆老帶頭教導，只有一位叔叔會做，成員們凝聚感很弱；
-                    在未來，文化流失只會越來越迅速，而可以的話，他想趁來不及之前，趕快回去學習。<br><br>
-                    另一方面，在台北打拼、摸索了這麼久，終於累積了一定的客戶，找到一套做人處事的方法，短期內要全盤放棄這些成果回蘭嶼定居，很難。
-                    而且，他也擔心回蘭嶼後太安逸，生活沒了努力的重心，他會不再自我鞭策、從此與大島的節奏脫節。
 
-                </p>
-            </div>
-            <div class="col-3"></div>
-        </div>
-    </div>
 
     <div id="twelve" class="container-fluid">
         <div class="row">
@@ -463,26 +478,26 @@
             // var video1_pos = $("#video1").offset().top;
             // var video1_end = video1_pos + $("#v1frame").height() - $(window).height();
 
-            var changed_up = 1;
-            var changed_down = 0;
-            var video_changing_pos1 = 1000;
-            var video_changing_pos2 = 1300;
+            // var changed_up = 1;
+            // var changed_down = 0;
+            // var video_changing_pos1 = 1000;
+            // var video_changing_pos2 = 1300;
 
-            $(window).scroll(function () {
-                var current_pos = $(window).scrollTop();
-                // console.log(current_pos);
-                if (current_pos <= video_changing_pos2 && changed_up == 0) {
-                    $("#video2").attr("src", "lanyu.mp4");
-                    $("#video2")[0].load();
-                    changed_up = 1;
-                    changed_down = 0;
-                } else if (current_pos > video_changing_pos1 && changed_down == 0) {
-                    $("#video2").attr("src", "goat.mp4");
-                    $("#video2")[0].load();
-                    changed_down = 1;
-                    changed_up = 0;
-                }
-            });
+            // $(window).scroll(function () {
+            //     var current_pos = $(window).scrollTop();
+            //     // console.log(current_pos);
+            //     if (current_pos <= video_changing_pos2 && changed_up == 0) {
+            //         $("#video2").attr("src", "lanyu.mp4");
+            //         $("#video2")[0].load();
+            //         changed_up = 1;
+            //         changed_down = 0;
+            //     } else if (current_pos > video_changing_pos1 && changed_down == 0) {
+            //         $("#video2").attr("src", "goat.mp4");
+            //         $("#video2")[0].load();
+            //         changed_down = 1;
+            //         changed_up = 0;
+            //     }
+            // });
             $(window).scroll(function () {
                 var scrolled = $(document).scrollTop();
                 var winh = $(window).height();
@@ -510,6 +525,16 @@
                     var opRange = $(this).parent().parent().height() / 3;
                     $(this).css({
                     opacity: ($(this).data("seq") * opRange - scrolled + 23.5 * winh) / opRange
+                    });
+                });
+            });
+            $(window).scroll(function () {
+                var scrolled = $(document).scrollTop();
+                var winh = $(window).height();
+                $(".opa4").each(function () {
+                    var opRange = $(this).parent().parent().height() / 4;
+                    $(this).css({
+                    opacity: ($(this).data("seq") * opRange - scrolled + 8 * winh) / opRange
                     });
                 });
             });
