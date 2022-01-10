@@ -46,7 +46,7 @@
             <li><a href="#">結語</a></li>
         </ul>
     </div>
-    
+
 <!--  -->
     <div id="first1" class="container-fluid">
         
@@ -378,42 +378,69 @@
         </div>
     </div>
 
-    <div id="timeline1" class="container-fluid">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <p span class="paragraph">
-                    時間軸1
-                </p>
+    <div id="timeline" style=" height: 1200vh;background-color: #000;filter: grayscale(20%);">
+        <div id="vanwa3" class="sticky-top" style="height: 100vh;z-index: 15;">
+            <img src="./地圖一.jpg"
+                class="opa5 img-fluid earth-img" data-seq=1 style="background-position:0% 50%;z-index:15;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
+            <img src="./地圖二.jpg"
+                class="opa5 img-fluid earth-img" data-seq=2 style="background-position:0% 50%;z-index:14;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
+            <img src="./地圖三.jpg"
+                class="opa5 img-fluid earth-img" data-seq=3 style="z-index:13;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
+            <img src="./地圖四 (2).jpg"
+                class="opa5 img-fluid earth-img" data-seq=4 style="z-index:12;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
+            <img src="./地圖五.jpg"
+                class="opa5 img-fluid earth-img" data-seq=5 style="z-index:11;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
+        </div>
+        <div id="float3">
+            <div>
+                <p class="floating-text"><span style="font-weight: bolder;">“四年前，經過朋友介紹，我來到台北擔任除蟲人員。”</span></p>
             </div>
-            <div class="col-3"></div>
+            <div>
+                <p class="floating-text"><span style="font-weight: bolder;">“我考到執業證照、學習環境防治知識，
+                    也開始經營、拓展自己的客戶群，慢慢有了在都市安身立命的感覺。”
+                    </span></p>
+            </div>
+            <div>
+                <p class="floating-text"><span style="font-weight: bolder;">“但是，我心中一直沒有忘記要回家。”</span></p>
+            </div>
+            <div>
+                <p class="floating-text"><span style="font-weight: bolder;">“這幾年，耆老相繼過世”
+                    </span></p>
+            </div>
+            <div>
+                <p class="floating-text"><span style="font-weight: bolder;">“年輕人不會講族語了，造舟、捕魚技藝也正在失傳。
+                    核廢料、土地規劃等議題，也從來沒停過。”                    
+                    </span></p>
+            </div>
+            <div>
+                <p class="floating-text"><span style="font-weight: bolder;">“但是，我好不容易累積到現在的工作成果，
+                    難道要全部放棄嗎？”</span></p>
+            </div>
+            <div>
+                <p class="floating-text"><span style="font-weight: bolder;">“回去蘭嶼，我會不會與台灣社會脫節、 失去競爭力？”</span></p>
+            </div>
         </div>
     </div>
-
-    <div id="timeline2" class="container-fluid">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <p span class="paragraph">
-                    時間軸2
-                </p>
-            </div>
-            <div class="col-3"></div>
-        </div>
-    </div>
-
-    <div id="timeline3" class="container-fluid">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <p span class="paragraph">
-                    時間軸3
-                </p>
-            </div>
-            <div class="col-3"></div>
-        </div>
-    </div>
-
     <div id="ending" class="container-fluid">
         <div class="row">
             <div class="col-3"></div>
@@ -504,7 +531,7 @@
                 $(".opa2").each(function () {
                     var opRange = $(this).parent().parent().height() / 2.5;
                     $(this).css({
-                    opacity: ($(this).data("seq") * opRange - scrolled + 28 * winh) / opRange
+                    opacity: ($(this).data("seq") * opRange - scrolled + 35 * winh) / opRange
                     });
                 });
             });
@@ -514,7 +541,7 @@
                 $(".opa1").each(function () {
                     var opRange = $(this).parent().parent().height() / 3;
                     $(this).css({
-                    opacity: ($(this).data("seq") * opRange - scrolled + 13 * winh) / opRange
+                    opacity: ($(this).data("seq") * opRange - scrolled + 19 * winh) / opRange
                     });
                 });
             });
@@ -524,7 +551,7 @@
                 $(".opa3").each(function () {
                     var opRange = $(this).parent().parent().height() / 3;
                     $(this).css({
-                    opacity: ($(this).data("seq") * opRange - scrolled + 23.5 * winh) / opRange
+                    opacity: ($(this).data("seq") * opRange - scrolled + 29 * winh) / opRange
                     });
                 });
             });
@@ -535,6 +562,16 @@
                     var opRange = $(this).parent().parent().height() / 4;
                     $(this).css({
                     opacity: ($(this).data("seq") * opRange - scrolled + 8 * winh) / opRange
+                    });
+                });
+            });
+            $(window).scroll(function () {
+                var scrolled = $(document).scrollTop();
+                var winh = $(window).height();
+                $(".opa5").each(function () {
+                    var opRange = $(this).parent().parent().height() / 6;
+                    $(this).css({
+                    opacity: ($(this).data("seq") * opRange - scrolled + 46 * winh) / opRange
                     });
                 });
             });
