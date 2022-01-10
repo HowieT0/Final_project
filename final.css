@@ -19,6 +19,10 @@ a {
     object-fit: cover;
     opacity: 1;
 }
+#float2 {
+    z-index: 20;
+    height: 500vh;
+}
 #float1 {
     z-index: 20;
     height: 500vh;
@@ -27,12 +31,18 @@ a {
     z-index: 20;
     height: 500vh;
 }
+.floattext2{
+    height: 100vh;
+    width: 25vw;
+    left: 50vw;
+    font-size: 3vh;
+}
 
 .floating-text {
     height: 100vh;
     width: 25vw;
     left: 20vw;
-    font-size: 2.5vh;
+    font-size: 3vh;
 }
 
 span {

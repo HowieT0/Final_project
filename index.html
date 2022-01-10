@@ -221,20 +221,41 @@
     </div>
 
 
-    <div id="ninth" class="container-fluid">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <p span class="paragraph">
-                    大學畢業後，Jiayod選擇跟隨同部落的同學及長輩的腳步，在台中的板模工地開啟了他的職涯。每天早上六點就要起床準備出門。
-                    在酷熱難耐的溽暑，以及刺骨的冬天，為了生存，一樣得在工地戶外勞動整天，中午就原地鋪張紙板休息二十分鐘。
-                    板模高風險的工作環境，在他身上留下大大小小的「印記」。<br><br>
-                    四年前，透過朋友介紹，他來到台北，找到了現在除蟲人員的工作，也考取相關執業證照。
-                    現在，他經營並慢慢拓展自己的客戶群，也開始投資理財。對Jiayod而言，每天磨練與客戶應對的技巧、學習害蟲防治知識，這樣一份有發展性的工作，比起純粹勞力投入，讓他更能在都市中安身立命。
-
-                </p>
+    <div id="nineth" style=" height: 400vh;background-color: #000;filter: grayscale(20%);">
+        <div id="vanwa2" class="sticky-top" style="height: 100vh;z-index: 15;">
+            <img src="./工地（改）.png"
+                class="opa3 img-fluid earth-img" data-seq=1 style="background-position:0% 30%;z-index:15;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
+            <img src="./工地2.PNG"
+                class="opa3 img-fluid earth-img" data-seq=2 style="background-position:0% 30%;z-index:14;position: absolute;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 1;">
+            
+        </div>
+        <div id="float2">
+            <div>
+                <p class="floattext2"><span style="font-weight: bolder;">“大學畢業後，我跟著同學和部落的叔叔們，來到台中做板模工。
+                    每天不到六點就要起床，準備上工。”
+                    </span></p>
             </div>
-            <div class="col-3"></div>
+            <div>
+                <p class="floattext2"><span style="font-weight: bolder;">“做工不僅耗體力，
+                    不論是30度的烈日，或不到10度的刺骨寒流，
+                    都必須上工，才能維持收入。”
+                    </span></p>
+            </div>
+            <div>
+                <p class="floattext2"><span style="font-weight: bolder;">“中午，我們就舖幾張紙板，
+                    躺著睡個二十分鐘，再起來繼續工作。
+                    工地風險比較高，幾年下來，我身上多了大大小小的「印記」。”
+                    </span></p>
+            </div>
+           
         </div>
     </div>
 
@@ -468,7 +489,7 @@
                 $(".opa2").each(function () {
                     var opRange = $(this).parent().parent().height() / 2.5;
                     $(this).css({
-                    opacity: ($(this).data("seq") * opRange - scrolled + 25 * winh) / opRange
+                    opacity: ($(this).data("seq") * opRange - scrolled + 28 * winh) / opRange
                     });
                 });
             });
@@ -479,6 +500,16 @@
                     var opRange = $(this).parent().parent().height() / 3;
                     $(this).css({
                     opacity: ($(this).data("seq") * opRange - scrolled + 13 * winh) / opRange
+                    });
+                });
+            });
+            $(window).scroll(function () {
+                var scrolled = $(document).scrollTop();
+                var winh = $(window).height();
+                $(".opa3").each(function () {
+                    var opRange = $(this).parent().parent().height() / 3;
+                    $(this).css({
+                    opacity: ($(this).data("seq") * opRange - scrolled + 23.5 * winh) / opRange
                     });
                 });
             });
