@@ -1,3 +1,46 @@
+* {
+    position: relative;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+#earth {
+    height: 100vh;
+    z-index: 15;
+}
+
+.earth-img {
+    position: absolute;
+    /* need to remove spaces of each of these img */
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 1;
+}
+#float1 {
+    z-index: 20;
+    height: 500vh;
+}
+#float {
+    z-index: 20;
+    height: 500vh;
+}
+
+.floating-text {
+    height: 100vh;
+    width: 25vw;
+    left: 20vw;
+    font-size: 2.5vh;
+}
+
+span {
+    background-color: white;
+}
+
+
+
 .toggle{
     position: fixed;
     top: 40px;
@@ -146,10 +189,16 @@ ul li a:hover{
     font-weight: 900;
     text-align: center;
 }
+#prefifth{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #fifth {
-    background-image: url(P5.png);
-    height: 100vh;
+    background-image: url(./游泳的海圖.png);
+    height: 300vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,15 +216,30 @@ ul li a:hover{
 }
 
 
-#seventh {
-    background-image: url(P6.png);
+#seventh1 {
+    background-image: url(./棒球場.png);
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#seventh2 {
+    background-image: url(./圖片1.png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#seventh3 {
+    background-image: url(./圖片二.png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #eight {
     background-color: white;
@@ -231,13 +295,32 @@ ul li a:hover{
     background-size: cover;
 }
 
-#timeline {
-    background-image: url(timeline1.png);
+#timeline1 {
+    background-color: white;
     height: 100vh;
-    background-attachment: fixed;
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(./完整時間軸1.png);
+}
+#timeline2 {
+    background-color: white;
+    height: 100vh;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./完整時間軸2.png);
+}
+#timeline3 {
+    background-color: white;
+    height: 100vh;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./完整時間軸3.png);
 }
 
 #ending {
@@ -257,3 +340,6 @@ ul li a:hover{
     font-weight: "bold";
     text-align: center;
 }
+
+
+
